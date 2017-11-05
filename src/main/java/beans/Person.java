@@ -12,7 +12,7 @@ public class Person {
     private IntegerProperty height;
     private IntegerProperty weight;
     private BooleanProperty pregnant;
-    private BooleanProperty englishMetrics;
+    private BooleanProperty englishMeasurements;
 
     /**
      * Non-default constructor
@@ -20,13 +20,13 @@ public class Person {
      * @param height
      * @param weight
      * @param pregnant
-     * @param englishMetrics
+     * @param englishMeasurements
      */
-    public Person(int height, int weight, boolean pregnant, boolean englishMetrics) {
+    public Person(int height, int weight, boolean pregnant, boolean englishMeasurements) {
         this.height = new SimpleIntegerProperty(height);
         this.weight = new SimpleIntegerProperty(weight);
         this.pregnant = new SimpleBooleanProperty(pregnant);
-        this.englishMetrics = new SimpleBooleanProperty(englishMetrics);
+        this.englishMeasurements = new SimpleBooleanProperty(englishMeasurements);
     }
 
     public Person() {
@@ -70,16 +70,16 @@ public class Person {
         this.pregnant.set(pregnant);
     }
 
-    public boolean isEnglishMetrics() {
-        return englishMetrics.get();
+    public boolean getEnglishMeasurements() {
+        return englishMeasurements.get();
     }
 
-    public BooleanProperty englishMetricsProperty() {
-        return englishMetrics;
+    public BooleanProperty englishMeasurementsProperty() {
+        return englishMeasurements;
     }
 
-    public void setEnglishMetrics(boolean englishMetrics) {
-        this.englishMetrics.set(englishMetrics);
+    public void setEnglishMeasurements(boolean englishMeasurements) {
+        this.englishMeasurements.set(englishMeasurements);
     }
 
     @Override
@@ -92,7 +92,7 @@ public class Person {
         if (height != null ? !height.equals(person.height) : person.height != null) return false;
         if (weight != null ? !weight.equals(person.weight) : person.weight != null) return false;
         if (pregnant != null ? !pregnant.equals(person.pregnant) : person.pregnant != null) return false;
-        return englishMetrics != null ? englishMetrics.equals(person.englishMetrics) : person.englishMetrics == null;
+        return englishMeasurements != null ? englishMeasurements.equals(person.englishMeasurements) : person.englishMeasurements == null;
     }
 
     @Override
@@ -100,7 +100,7 @@ public class Person {
         int result = height != null ? height.hashCode() : 0;
         result = 31 * result + (weight != null ? weight.hashCode() : 0);
         result = 31 * result + (pregnant != null ? pregnant.hashCode() : 0);
-        result = 31 * result + (englishMetrics != null ? englishMetrics.hashCode() : 0);
+        result = 31 * result + (englishMeasurements != null ? englishMeasurements.hashCode() : 0);
         return result;
     }
 
@@ -110,7 +110,7 @@ public class Person {
                 "height=" + height +
                 ", weight=" + weight +
                 ", pregnant=" + pregnant +
-                ", englishMetrics=" + englishMetrics +
+                ", englishMeasurements=" + englishMeasurements +
                 '}';
     }
 }
