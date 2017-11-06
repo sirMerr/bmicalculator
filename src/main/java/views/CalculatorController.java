@@ -14,6 +14,7 @@ import javafx.scene.layout.Region;
 import javafx.util.converter.NumberStringConverter;
 import org.slf4j.LoggerFactory;
 
+import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 
 public class CalculatorController {
@@ -34,6 +35,9 @@ public class CalculatorController {
     private final Person person;
     private final ObservableList<BMI> bmiStats;
 
+    /**
+     * Default constructor, initiates the global variables
+     */
     public CalculatorController() {
         super();
         person = new Person();
@@ -93,12 +97,12 @@ public class CalculatorController {
         if (validateHeight() && validateNonPregnant() && validateWeight()) {
             double bmi;
             if (person.isEnglishMeasurements()) {
-                bmi = person.getWeight()*703/ Math.pow(person.getHeight(),2);
+                bmi = person.getWeight()*703/ Math.pow(person.getHeight() * 12,2);
             } else {
                 bmi = person.getWeight()/ Math.pow(person.getHeight(),2);
             }
 
-            personBMI.setText("" + bmi);
+            personBMI.setText(new DecimalFormat("##.##").format(bmi));
         }
     }
 
@@ -114,7 +118,8 @@ public class CalculatorController {
     }
 
     /**
-     * Ensures that the person's height is valid
+     * Ensures that the person's height is valid, otherwise
+     * sends an alert
      *
      * @return true if height is above 3 feet and below 6.11 feet
      */
@@ -141,7 +146,8 @@ public class CalculatorController {
     }
 
     /**
-     * Ensures that the person's weight is valid
+     * Ensures that the person's weight is valid, otherwise
+     * sends an alert
      *
      * @return true if weight is between 51 and 499, false if not
      */
@@ -158,6 +164,12 @@ public class CalculatorController {
         }
     }
 
+    /**
+     * Ensures that the person is not pregnant, otherwise sends
+     * an alert telling them that this measure is not for them
+     *
+     * @return true if not pregnant, false if not
+     */
     private boolean validateNonPregnant() {
         if (person.isPregnant()) {
             dialog.setContentText(ResourceBundle.getBundle("Messages").getString("ERROR_YOU_ARE_PREGNANT"));
