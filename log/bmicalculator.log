@@ -83,3 +83,7 @@ javafx.fxml.LoadException: Resource "EXIT" not found.
 [DEBUG] 2017-11-05 23:54:01.368 [JavaFX Application Thread] CalculatorController - English: true
 [DEBUG] 2017-11-05 23:54:08.971 [JavaFX Application Thread] CalculatorController - English: true
 [DEBUG] 2017-11-05 23:54:12.512 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:58:11.983 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:58:22.056 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:58:29.219 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:58:32.275 [JavaFX Application Thread] CalculatorController - English: true

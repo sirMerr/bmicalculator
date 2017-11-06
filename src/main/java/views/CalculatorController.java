@@ -127,7 +127,7 @@ public class CalculatorController {
         log.debug("English: " + person.isEnglishMeasurements());
 
         if (person.isEnglishMeasurements()) {
-            if (person.getHeight() >= 3 && person.getHeight() <= 6.11) {
+            if (person.getHeight() >= 3 && person.getHeight() <= 6.08333) {
                 return true;
             } else {
                 dialog.setContentText(ResourceBundle.getBundle("Messages").getString("ERROR_HEIGHT_ENGLISH"));
