@@ -9,8 +9,8 @@ import javafx.beans.property.*;
  */
 public class Person {
 
-    private IntegerProperty height;
-    private IntegerProperty weight;
+    private DoubleProperty height;
+    private DoubleProperty weight;
     private BooleanProperty pregnant;
     private BooleanProperty englishMeasurements;
 
@@ -23,8 +23,8 @@ public class Person {
      * @param englishMeasurements
      */
     public Person(int height, int weight, boolean pregnant, boolean englishMeasurements) {
-        this.height = new SimpleIntegerProperty(height);
-        this.weight = new SimpleIntegerProperty(weight);
+        this.height = new SimpleDoubleProperty(height);
+        this.weight = new SimpleDoubleProperty(weight);
         this.pregnant = new SimpleBooleanProperty(pregnant);
         this.englishMeasurements = new SimpleBooleanProperty(englishMeasurements);
     }
@@ -33,28 +33,27 @@ public class Person {
         this(-1,-1,false, false);
     }
 
-    // Getters and Setters
-    public int getHeight() {
+    public double getHeight() {
         return height.get();
     }
 
-    public IntegerProperty heightProperty() {
+    public DoubleProperty heightProperty() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height.set(height);
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight.get();
     }
 
-    public IntegerProperty weightProperty() {
+    public DoubleProperty weightProperty() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight.set(weight);
     }
 
@@ -70,7 +69,7 @@ public class Person {
         this.pregnant.set(pregnant);
     }
 
-    public boolean getEnglishMeasurements() {
+    public boolean isEnglishMeasurements() {
         return englishMeasurements.get();
     }
 

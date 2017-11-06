@@ -1,0 +1,54 @@
+[ERROR] 2017-11-05 18:45:49.590 [JavaFX Application Thread] MainApp - null
+javafx.fxml.LoadException: Resource "EXIT" not found.
+/Users/sirMerr/Development/compsci-notes/development/software-dev-project/bmicalculator/target/classes/fxml/CalculatorLayout.fxml:59
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.resolvePrefixedValue(FXMLLoader.java:424) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processValue(FXMLLoader.java:363) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processPropertyAttribute(FXMLLoader.java:325) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$Element.processInstancePropertyAttributes(FXMLLoader.java:235) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:767) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409) ~[jfxrt.jar:?]
+	at MainApp.configureStage(MainApp.java:79) ~[classes/:?]
+	at MainApp.start(MainApp.java:48) ~[classes/:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326) ~[jfxrt.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) [jfxrt.jar:?]
+[DEBUG] 2017-11-05 21:15:31.008 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 21:15:35.595 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 21:15:46.636 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 21:15:51.481 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:11:15.535 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:11:20.788 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:11:51.517 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:12:50.033 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:12:53.830 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:13:27.370 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:13:49.549 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:18.333 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:22.843 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:26.656 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:31.916 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:38.617 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:42.639 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:47.085 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:14:58.991 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:15:01.543 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:15:08.894 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:15:12.738 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:15:16.770 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:15:19.688 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:17:02.526 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:17:05.850 [JavaFX Application Thread] CalculatorController - English: false
+[DEBUG] 2017-11-05 23:17:10.701 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:17:13.786 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:17:24.121 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:17:30.407 [JavaFX Application Thread] CalculatorController - English: true
+[DEBUG] 2017-11-05 23:19:42.109 [JavaFX Application Thread] CalculatorController - English: false
