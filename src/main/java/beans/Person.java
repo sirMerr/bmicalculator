@@ -15,7 +15,7 @@ public class Person {
     private BooleanProperty englishMeasurements;
 
     /**
-     * Non-default constructor
+     * Constructor
      *
      * @param height
      * @param weight

@@ -17,6 +17,11 @@ import org.slf4j.LoggerFactory;
 import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 
+/**
+ * This is the controller class for the CalculatorLayout.fxml
+ *
+ * @author Tiffany Le-Nguyen
+ */
 public class CalculatorController {
     private final org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass()
             .getName());
@@ -86,6 +91,7 @@ public class CalculatorController {
                 new PropertyValueFactory<BMI,String>("risk")
         );
 
+        // Set BMI data to tableview
         tableview.setItems(bmiStats);
     }
 
@@ -94,14 +100,17 @@ public class CalculatorController {
      * @param actionEvent
      */
     public void onCalculate(ActionEvent actionEvent) {
+        // If all three are valid, calculate and display BMI result
         if (validateHeight() && validateNonPregnant() && validateWeight()) {
             double bmi;
             if (person.isEnglishMeasurements()) {
+                // Doing * 12 to convert feet to inches
                 bmi = person.getWeight()*703/ Math.pow(person.getHeight() * 12,2);
             } else {
                 bmi = person.getWeight()/ Math.pow(person.getHeight(),2);
             }
 
+            // Display BMI
             personBMI.setText(new DecimalFormat("##.##").format(bmi));
         }
     }
@@ -127,6 +136,7 @@ public class CalculatorController {
         log.debug("English: " + person.isEnglishMeasurements());
 
         if (person.isEnglishMeasurements()) {
+            // 6.08333 is equivalent to 73 inches, which is our end condition
             if (person.getHeight() >= 3 && person.getHeight() <= 6.08333) {
                 return true;
             } else {
@@ -135,6 +145,7 @@ public class CalculatorController {
                 return false;
             }
         } else {
+            // Metric
             if (person.getHeight() > 0.914 && person.getHeight() < 2.108) {
                 return true;
             } else {

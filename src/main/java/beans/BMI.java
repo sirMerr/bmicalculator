@@ -4,6 +4,10 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
+ * JavaFX bean for a BMI stats. For use in
+ * the TableView to display information about BMI
+ * and their associated risks/benefits
+ *
  * @author Tiffany Le-Nguyen
  */
 public class BMI {
@@ -11,6 +15,13 @@ public class BMI {
     StringProperty values;
     StringProperty risk;
 
+    /**
+     * Constructor
+     *
+     * @param category
+     * @param values
+     * @param risk
+     */
     public BMI(String category, String values, String risk) {
         this.category = new SimpleStringProperty(category);
         this.values = new SimpleStringProperty(values);
