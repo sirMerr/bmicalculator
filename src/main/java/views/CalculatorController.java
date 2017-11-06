@@ -47,9 +47,12 @@ public class CalculatorController {
         super();
         person = new Person();
         group = new ToggleGroup();
+
+        // Alert dialog will be used to display user errors on validation
         dialog = new Alert(Alert.AlertType.ERROR);
         dialog.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
 
+        // Stats on BMI to be displayed in the tableview
         bmiStats = FXCollections.observableArrayList(
                 new BMI("Underweight", "less than 18.5", "Increased health risk"),
                 new BMI("Normal weight", "18.5 to 24.9", "Least health risk"),
@@ -61,9 +64,8 @@ public class CalculatorController {
     }
     /**
      * This method is automatically called after the fxml file has been loaded.
-     * This code binds the properties of the data bean to the JavaFX controls.
-     * Changes to a control is immediately written to the bean and a change to
-     * the bean is immediately shown in the control.
+     * In here we binds the properties of the data bean to the JavaFX controls
+     * and set the tableview.
      */
     @FXML
     private void initialize() {
@@ -114,8 +116,6 @@ public class CalculatorController {
             personBMI.setText(new DecimalFormat("##.##").format(bmi));
         }
     }
-
-
 
     /**
      * Exit event handler
