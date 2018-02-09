@@ -1,7 +1,7 @@
 If this does not run normally, change the `mainClass` name `bmicalculator` in the pom.xml, since I may have forgotten to change it, or follow the *Steps to Run* instructions below.
 
 # bmicalculator
-JavaFX Simple BMI Calculator (assignment)
+JavaFX Simple BMI Calculator
 
 This application calculates a person’s Body Mass Index. The BMI is what some people use as an
 indicator of whether an individual is underweight, normal, overweight or obese. It is
