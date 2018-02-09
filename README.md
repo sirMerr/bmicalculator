@@ -1,3 +1,5 @@
+If this does not run, change the name `bmicalculator` in the pom.xml, since I may have forgotten to change it
+
 # bmicalculator
 JavaFX Simple BMI Calculator (assignment)
 
