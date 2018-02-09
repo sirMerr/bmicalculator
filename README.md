@@ -1,4 +1,4 @@
-If this does not run normally, change the name `bmicalculator` in the pom.xml, since I may have forgotten to change it, or follow the *Steps to Run* instructions below.
+If this does not run normally, change the `mainClass` name `bmicalculator` in the pom.xml, since I may have forgotten to change it, or follow the *Steps to Run* instructions below.
 
 # bmicalculator
 JavaFX Simple BMI Calculator (assignment)
